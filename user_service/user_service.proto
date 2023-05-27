@@ -14,7 +14,6 @@ service UserService {
     rpc Update (UpdateUser) returns (User);
     rpc UpdatePatch (UpdatePatchUser) returns (User);
     rpc Delete (UserPrimaryKey) returns (google.protobuf.Empty);
-
     rpc CreateOTP (CreateOTP) returns (google.protobuf.Empty);
     rpc VerifyOTP (VerifyOTP) returns (google.protobuf.Empty);
     rpc Check (UserPhoneNumberReq) returns (User);
