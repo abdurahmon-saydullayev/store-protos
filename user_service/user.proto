@@ -12,7 +12,7 @@ message User {
     string last_name = 3;
     string phone_number = 4;
     string date_of_birth = 5;
-    string passwords = 6;
+    string password = 6;
     string created_at = 7;
     string updated_at = 8;
 }
@@ -22,7 +22,7 @@ message CreateUser {
     string last_name = 2;
     string phone_number = 3;
     string date_of_birth = 4;
-    string passwords = 5;
+    string password = 5;
 }
 
 message UpdateUser {
@@ -31,7 +31,7 @@ message UpdateUser {
     string last_name = 3;
     string phone_number = 4;
     string date_of_birth = 5;
-    string passwords = 6;
+    string password = 6;
 }
 
 message UpdatePatchUser {
