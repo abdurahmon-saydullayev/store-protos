@@ -21,7 +21,7 @@ message Order {
 message CreateOrder {
     string id =1;
     string product_id =2;
-    string user_id =3;
+    User user_data =3;
     string status =4;
 }
 message OrderPrimaryKey {
