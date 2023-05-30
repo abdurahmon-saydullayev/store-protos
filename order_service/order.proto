@@ -4,18 +4,14 @@ package order_service;
 option go_package="genproto/order_service";
 import "google/protobuf/struct.proto";
 
-message User{
-    string id  =1;
-    string first_name = 2;
-    string last_name = 3;
-    string phone_number =4;
-}
-
 message Order {
     string id =1;
     string product_id =2;
     string status =3;
-    User user_data =4;
+    string user_id =4;
+    string user_first_name=5;
+    string user_last_name=6;
+    string user_phone_number = 7;
 }
 
 message CreateOrder {
